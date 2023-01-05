@@ -101,20 +101,6 @@ class _HomePageState extends State<HomePage> {
                   }),
             ),
             const SizedBox(height: 25),
-            Container(
-              height: 50,
-              child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: coffeeType.length,
-                  itemBuilder: (context, index) {
-                    return CoffeeTile(
-                      coffeeImagePath: 'lib/images/coffee.jpg',
-                      coffeeName: 'coffee',
-                      coffeePrice: '450',
-                    );
-                  }),
-            ),
-            const SizedBox(height: 25),
             Expanded(
               child: ListView(
                 scrollDirection: Axis.horizontal,
